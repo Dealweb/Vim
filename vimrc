@@ -124,7 +124,7 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme desert
+colorscheme 256-grayvim
 set background=dark
 
 " Set extra options when running in GUI mode
@@ -411,18 +411,30 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'mattn/emmet-vim'
+Plugin 'vim-scripts/bufexplorer.zip'
 
 " --- NerdTree Options ---
 autocmd vimenter * if !argc() | NERDTree | endif
-map <leader>nn :NERDTreeToggle<CR>
+map <leader>t :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " --- Powerline ---
 let g:airline_powerline_fonts = 1
 let g:airline_theme='simple'
 
+" --- NerdCommenter ---
+
 " --- CtrlP ---
 map <leader>f :CtrlP<CR>
 
 " --- TagBar ---
 nmap <F8> :TagbarToggle<CR>
+
+" --- BufExplorer ---
+map <leader>o :BufExplorer<cr>
+
+" --- Tab navigation ---
+map <leader>l :tabn<CR>
+map <leader>h :tabp<CR>
