@@ -415,6 +415,11 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/bufexplorer.zip'
 Plugin 'brookhong/DBGPavim'
+Plugin 'evidens/vim-twig'
+
+
+" let g:netrw_liststyle=3
+" map <leader>t :Explore<CR>
 
 " --- NerdTree Options ---
 autocmd vimenter * if !argc() | NERDTree | endif
@@ -445,3 +450,6 @@ map <leader>h :tabp<CR>
 map <leader>gs :Git status<CR>
 
 map <leader>c :noh<CR>
+
+" --- XDebug ---
+let g:dbgPavimPathMap = [[getcwd(),'/vagrant'],]
