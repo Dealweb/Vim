@@ -414,15 +414,17 @@ Plugin 'majutsushi/tagbar'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/bufexplorer.zip'
+Plugin 'brookhong/DBGPavim'
 
 " --- NerdTree Options ---
 autocmd vimenter * if !argc() | NERDTree | endif
 map <leader>t :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" --- Powerline ---
+" --- Airline ---
 let g:airline_powerline_fonts = 1
 let g:airline_theme='simple'
+let g:airline#extensions#tabline#enabled = 1
 
 " --- NerdCommenter ---
 
@@ -430,7 +432,7 @@ let g:airline_theme='simple'
 map <leader>f :CtrlP<CR>
 
 " --- TagBar ---
-nmap <F8> :TagbarToggle<CR>
+nmap <M-7> :TagbarToggle<CR>
 
 " --- BufExplorer ---
 map <leader>o :BufExplorer<cr>
@@ -438,3 +440,8 @@ map <leader>o :BufExplorer<cr>
 " --- Tab navigation ---
 map <leader>l :tabn<CR>
 map <leader>h :tabp<CR>
+
+" --- Git ---
+map <leader>gs :Git status<CR>
+
+map <leader>c :noh<CR>
