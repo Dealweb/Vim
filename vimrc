@@ -432,7 +432,7 @@ let g:airline#extensions#tabline#enabled = 1
 map <leader>f :CtrlP<CR>
 
 " --- TagBar ---
-nmap <M-7> :TagbarToggle<CR>
+map <leader>7 :TagbarToggle<CR>
 
 " --- BufExplorer ---
 map <leader>o :BufExplorer<cr>
