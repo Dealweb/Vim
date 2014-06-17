@@ -416,6 +416,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/bufexplorer.zip'
 Plugin 'brookhong/DBGPavim'
 Plugin 'evidens/vim-twig'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
 
 
 " let g:netrw_liststyle=3
@@ -448,8 +450,6 @@ map <leader>h :tabp<CR>
 
 " --- Git ---
 map <leader>gs :Git status<CR>
-
-map <leader>c :noh<CR>
 
 " --- XDebug ---
 let g:dbgPavimPathMap = [[getcwd(),'/vagrant'],]
