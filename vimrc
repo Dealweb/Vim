@@ -418,6 +418,13 @@ Plugin 'brookhong/DBGPavim'
 Plugin 'evidens/vim-twig'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
+Plugin 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'spf13/PIV'
+Plugin 'Raimondi/delimitMate'
+Plugin 'Shougo/neocomplete.vim'
 
 
 " let g:netrw_liststyle=3
@@ -453,3 +460,5 @@ map <leader>gs :Git status<CR>
 
 " --- XDebug ---
 let g:dbgPavimPathMap = [[getcwd(),'/vagrant'],]
+
+let g:neocomplete#enable_at_startup = 1
