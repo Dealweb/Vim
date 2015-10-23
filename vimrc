@@ -424,6 +424,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'spf13/PIV'
 Plugin 'Raimondi/delimitMate'
+Plugin 'StanAngeloff/php.vim'
 " Plugin 'Shougo/neocomplete.vim'
 
 
@@ -462,3 +463,13 @@ map <leader>gs :Git status<CR>
 let g:dbgPavimPathMap = [[getcwd(),'/vagrant'],]
 
 let g:neocomplete#enable_at_startup = 1
+
+function! PhpSyntaxOverride()
+    hi! def link phpDocTags  phpDefine
+    hi! def link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+    autocmd!
+    autocmd FileType php call PhpSyntaxOverride()
+augroup END
