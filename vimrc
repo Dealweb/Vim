@@ -402,7 +402,7 @@ set relativenumber
 set number
 set cursorline
 
-set rtp+=/home/henrique/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Plugin 'gmarik/vundle'
@@ -424,7 +424,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'spf13/PIV'
 Plugin 'Raimondi/delimitMate'
-Plugin 'Shougo/neocomplete.vim'
+" Plugin 'Shougo/neocomplete.vim'
 
 
 " let g:netrw_liststyle=3
