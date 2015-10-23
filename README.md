@@ -13,6 +13,7 @@ Enter into ~/.vim folder and update git submodules
 cd ~/.vim
 git submodule init
 git submodule update
+ln -s ~/.vim/vimrc ~/.vimrc
 ``
 Run VundleInstall
 ``sh

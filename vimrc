@@ -124,7 +124,7 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme 256-grayvim
+colorscheme sorcerer 
 set background=dark
 
 " Set extra options when running in GUI mode
