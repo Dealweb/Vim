@@ -5,18 +5,18 @@ Instalation
 -------------
 
 Clone the repository into your ~/.vim folder
-``sh
-git clone git@bitbucket.org:dealwebteam/dealwebvim.git ~/.vim
-``
+```sh
+git clone https://github.com/Dealweb/Vim.git ~/.vim
+```
 Enter into ~/.vim folder and update git submodules
-``sh
+```sh
 cd ~/.vim
 git submodule init
 git submodule update
 ln -s ~/.vim/vimrc ~/.vimrc
-``
+```
 Run VundleInstall
-``sh
+```sh
 vim +VundleInstall
-``
+```
 Now you are ready, next time you run vim must be everything ok.`
