@@ -123,9 +123,9 @@ set tm=500
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
+set background=dark
 
 colorscheme sorcerer 
-set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -398,8 +398,8 @@ endfunction
 
 " Henrique Customizations
 set nocompatible
-set relativenumber
 set number
+set relativenumber
 set cursorline
 
 set rtp+=~/.vim/bundle/vundle
@@ -460,7 +460,8 @@ map <leader>h :tabp<CR>
 map <leader>gs :Git status<CR>
 
 " --- XDebug ---
-let g:dbgPavimPathMap = [[getcwd(),'/vagrant'],]
+let g:dbgPavimPathMap = [[getcwd(),'/srv/http/DealwebPlatform'],]
+let g:dbgPavimBreakAtEntry = 1
 
 let g:neocomplete#enable_at_startup = 1
 
