@@ -125,7 +125,8 @@ set tm=500
 syntax enable
 set background=dark
 
-colorscheme sorcerer 
+" colorscheme hybrid 
+colorscheme mustang 
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -407,6 +408,7 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
